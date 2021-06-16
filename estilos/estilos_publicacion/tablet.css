@@ -1,0 +1,44 @@
+@media screen and (min-width: 481px) and (max-width: 861px){
+#menu {
+    width: 100%;
+}
+div#profile_pic {
+    width: 100vw;
+}
+#inputs {
+    text-align: center;
+}
+ul#iconos {
+    width: 100px;
+    height: 40vh;
+}
+p {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+i#fofa {
+    margin: 0 25px;
+}
+div#archivos {
+    height: 50vh;
+    width: 100px;
+    float: left;
+    margin-top: 20px;
+    text-align: center;
+}
+div#previsualizacion {
+    margin-top: 20px;
+    height: 50vh;
+    width: 65vw;
+    float: left;
+    margin-left: 10px;
+}
+input#button {
+    background-color: white;
+    border-radius: 100px;
+    padding: 10px 35px;
+    border: none;
+}
+}

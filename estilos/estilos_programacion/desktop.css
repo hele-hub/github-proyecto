@@ -1,0 +1,136 @@
+@media screen and (min-width: 862px){ /*lo he cambiado para que se adapte a la pantalla de mi móvil; antes 769px*/
+/*.tit {
+    width: 10vw;
+    margin: 0;
+}*/
+a.menu {
+    text-decoration: none;
+    color: black;
+    padding: 0;
+    display: block;
+    height: 40px;
+}
+#menu {
+    background-color: transparent;
+}
+#menu > li {
+    float: right;
+    text-align: center;
+    margin: 20px 20px;
+}
+#menu li:hover > .sub{
+    display: block;
+}
+ul#menu {
+    border: none;
+    float: right;
+    height: 200px;
+}
+.sub a {
+    padding: 10px 10px;
+}
+.sub a:hover{
+    background-color: black;
+    color: white;
+}
+#menu {
+    overflow: hidden;
+    text-align: center;
+    width: 80vw;
+    margin: 0 auto;
+    height: 100px;
+    position: relative;
+    top: -10px;
+    left: 0;
+}
+#menu li .sub {
+    position: absolute;
+    height: 28vh;
+    top: 55px;
+    width: 25%;
+    margin: 0;
+    text-align: left;
+    display: none;
+}
+#menu li .sub li {
+    width: 100%;
+    background-color: white;
+    margin-bottom: 5px;
+}
+#menu li:hover > .sub{
+    display: block;
+}
+a {
+    padding: 0;
+}
+a.menu:hover{
+    color: #59bcb9;
+}
+ul#menu {
+    border: none;
+    float: right;
+    height: 230px;
+}
+li {
+    background-color: none;
+}
+/* ++++++++++ HAMBURGUESA ++++++++++ */
+input#flag {
+    display: none;
+}
+/* ++++++++++ HASTA AQUI EL MENU HAMBURGUESA ++++++++++ */
+header label{
+    margin-bottom: 0;
+}
+section#filtros {
+    height: auto;
+}
+div#titulo {
+    margin-bottom: 50px;
+    padding-top: 100px;
+    text-align: center;
+}
+h1 {
+    font-size: 3em;
+}
+#sub {
+    font-size: 22px;
+}
+.grupo_filtros {
+    width: 30vw;
+    margin-right: 15px;
+    margin-bottom: 30px;
+}
+label {
+    text-align: center;
+}
+div#elige {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+.desplegable {
+    width: 375px;
+    display: inline-block;
+}
+#despliega_dia{
+    margin-right: 15px;
+}
+h3 {
+    font-size: 3em;
+    width: 300px;
+    margin-right: 50px;
+    font-weight: 600;
+}
+h4 {
+    line-height: 65px;
+    font-size: 2em;
+    width: 200px;
+}
+/* ++++++++++ FOOTER ++++++++++ */
+a.legal {
+    display: inline;
+    margin: 0 15px;
+    text-decoration: none;
+}
+}

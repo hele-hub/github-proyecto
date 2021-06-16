@@ -1,0 +1,210 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+<title>RAD Bombeta 2021 - Programación</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="helena">
+<script src="https://use.fontawesome.com/dca1703bd6.js"></script>
+<link rel="icon" sizes="512x512" href="img/img_programacion/favicon_rad.png">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.typekit.net/etw5due.css">
+<link rel="stylesheet" type="text/css" href="estilos/estilos_programacion/styles.css">
+<link rel="stylesheet" type="text/css" href="estilos/estilos_programacion/movil.css">
+<link rel="stylesheet" type="text/css" href="estilos/estilos_programacion/tablet.css">
+<link rel="stylesheet" type="text/css" href="estilos/estilos_programacion/desktop.css">
+<style>
+  @import url("https://use.typekit.net/etw5due.css");
+</style>
+	</head>
+	<body>
+		<header>
+	        <input type="checkbox" class="checkbox" id="flag"/>
+	        <label for="flag" class="menu-toogle"><span></span></label>
+	        <ul id="menu">
+	            <li><a class="menu" href="homeingles.html">EN</a></li>
+	            <li><a class="menu" href="">Área personal</a>
+	                <ul class="sub">
+	                    <li><a class="menu" href="perfil.html">Perfil</a></li>
+	                    <li><a class="menu" href="muro.html">Muro</a></li>
+	                    <li><a class="menu" href="publicacion.html">Publicar</a></li>
+	                    <li><a class="menu" href="live.html">Live</a></li>
+	                </ul>
+	            </li>
+	            <li><a class="menu" href="informacion-practica.html">Información práctica</a></li>
+	            <li><a class="menu" href="entradas.html">Entradas</a></li>   
+	            <li><a class="menu" href="programacion.html">Programación</a></li>
+	        </ul>
+	        <div class="tit">
+	            <a href="home.html" id="go_home"><img src="img/img_home/imagotipo_final.png" id="logotipo"></a>
+	        </div>
+    	</header>
+	<section id="filtros">
+    	<div id="titulo">
+    		<h1>PROGRAMACIÓN</h1>
+    		<h3 id="sub">Filtro de búsqueda</h3>
+    	</div>
+    	<div id="elige">
+	    	<div class="desplegable" id="despliega_dia">
+				<label for="dia">Dia</label>
+				<select id="dia" name="dia"> <!--para seleccionar el tipo de datos que necesito-->
+					<option value="todo" selected>Todo</option>
+					<option value="viernes">Viernes</option>
+					<option value="sabado">Sábado</option>
+				</select>
+			</div>
+			<div class="desplegable" id="despliega_hora">
+				<label for="hora">Hora</label>
+				<select id="hora" name="hora">
+					<option value="todo" selected>Todo</option>
+					<option value="20:00">20:00</option>
+					<option value="22:00">22:00</option>
+				</select>
+			</div>
+		</div>
+		<div id="resultados">
+			<h2>Resultados</h2>	
+		</div>
+		<ul id="info">
+		</ul>
+	</section>
+	<section id="patrocinadores">
+    	<img id="img_partners" src="img/img_home/patrocinadores/cocacola.png" alt="lineup">
+    	<img id="img_partners" src="img/img_home/patrocinadores/jackdaniels.png" alt="lineup">
+    	<img id="img_partners" src="img/img_home/patrocinadores/mastercard.png" alt="lineup">
+    	<img id="img_partners" src="img/img_home/patrocinadores/redbull.png" alt="lineup">
+    </section>
+    <footer>
+    	<a class="legal" href="avisolegal.html">Aviso Legal</a>
+    	<a class="legal" href="avisolegal.html">Política de Cookies</a>
+    	<a class="legal" href="avisolegal.html">Política de Privacidad</a>
+    	<a class="legal" href="avisolegal.html">Condiciones Generales</a>
+    </footer>
+
+		<script type="text/javascript" language="javascript">
+			var festival=[
+				{grupo:'Dorian', dia:'Sábado', hora:'20:00', escenario:'esc1', disco:'10 años', cancion:'a cualquier otra parte.mp3'},
+				{grupo:'Delaporte', dia:'Viernes', hora:'22:00', escenario:'esc2', disco:'cendra i or', cancion:'eterna força.mp3'},
+				{grupo:'Maria Arnal', dia:'Viernes', hora:'20:00', escenario:'esc2', disco:'45 cerebros', cancion:'sombrilla.mp3'},
+				{grupo:'Mafalda', dia:'Sábado', hora:'22:00', escenario:'esc1', disco:'funciona por favor', cancion:'cancion total.mp3'}
+			];
+			var info=document.getElementById('info');//esto es la lista
+			var artdeartista=document.getElementsByClassName('artdeartista');//esto son los lis
+			var dia=document.getElementById('dia'); //esta variable me recojera los datos del select, que es quien tiene el id; esta variable es el option y tenemos que hacer que funcione como si fuera un boton, por lo tanto tenemos que ponerle un event//
+			var hora=document.getElementById('hora');
+			dia.addEventListener('change',fildefiltrar); //la funcion change, te da un resultado tan pronto como cambia el contenido de la dropdown list; es decir, si yo en el dropdown selecciono viernes, automaticamente me apareceran los resultados del viernes//
+			hora.addEventListener('change',fildefiltrar);
+
+
+			var viernes=festival.filter(function (devuelve){
+				return devuelve.dia=='Viernes';
+			});//return es decirle que nos de los resultados, que nos devuelva X cosa//
+			//si tengo 3 dias tengo que crear 3 variables//
+			var sabado=festival.filter(function (devuelve){
+				return devuelve.dia=='Sábado'; 
+			});
+			var horaocho=festival.filter(function (devuelve){
+				return devuelve.hora=='20:00'; 
+			});
+			var horaveintidos=festival.filter(function (devuelve){
+				return devuelve.hora=='22:00'; 
+			});
+			var vierneshoraocho=festival.filter(function (devuelve){
+				return devuelve.dia=='Viernes' && devuelve.hora=='20:00'; 
+			});
+			var vierneshoraveintidos=festival.filter(function (devuelve){
+				return devuelve.dia=='Viernes' && devuelve.hora=='22:00'; 
+			});
+			var sabadohoraocho=festival.filter(function (devuelve){
+				return devuelve.dia=='Sábado' && devuelve.hora=='20:00'; 
+			});
+			var sabadohoraveintidos=festival.filter(function (devuelve){
+				return devuelve.dia=='Sábado' && devuelve.hora=='22:00'; 
+			});
+			console.log(festival);
+			console.log(viernes);
+			console.log(sabado);
+			console.log(artdeartista);
+			console.log(horaocho);
+			console.log(horaveintidos);
+			console.log(vierneshoraocho);
+			console.log(vierneshoraveintidos);
+			console.log(sabadohoraocho);
+			console.log(sabadohoraveintidos);
+			function crea(){
+				var nuevo=document.createElement('li'); //esto es para que nos creen automaticamente tantos contenedores como elementos queramos generar
+				nuevo.className="artdeartista";//todos los elementos que cree, quiero que se creen con la clase artdeartista
+				info.appendChild(nuevo);//me guardara los elementos dentro de la variable info
+
+			}
+			function borra(){
+				while(info.hasChildNodes()){
+					info.removeChild(info.firstChild);
+				}
+			}//con esta funcion elimino elementos; mientras que info tenga hijos, coge el elemento info y borra los hijos que tenga
+			for (var i=0; i<festival.length; i++){
+				crea();
+				artdeartista[i].innerHTML="<h4>"+festival[i].dia+"</h4><h3>"+festival[i].grupo+"</h3><h4>"+festival[i].hora+"</h4>";
+			}//este for es el que nos provee con el contenido; en artdeartista[i], la i se va sustituyendo por el elemento que corresponda de la variable festival
+			function fildefiltrar(){
+				if (dia.value=='viernes' && hora.value=='todo'){ //se refiere al valor de la variable dia//
+					borra();
+					for (var i=0; i<viernes.length; i++){
+						crea();//este me crea la li
+						artdeartista[i].innerHTML="<h4>"+viernes[i].dia+"</h4><h3>"+viernes[i].grupo+"</h3><h4>"+viernes[i].hora+"</h4>";//y este me rellena los datos
+					}
+					//info.innerHTML=viernes[1].grupo+' '+viernes[1].dia;//queremos solo lo que pase los viernes; si en vez de un cero ponemos un uno me aparecera el segundo elementos del viernes en lugar de el primero; esto ocurre porque solo estamos permitiendo que se vea un elemento a la vez//
+				} else if(dia.value=='todo' && hora.value=='20:00') {
+					borra();
+					for (var i=0; i<horaocho.length; i++){
+						crea();
+						artdeartista[i].innerHTML="<h4>"+horaocho[i].dia+"</h4><h3>"+horaocho[i].grupo+"</h3><h4>"+horaocho[i].hora+"</h4>";
+					}
+				} else if(dia.value=='todo' && hora.value=='22:00') {
+					borra();
+					for (var i=0; i<horaveintidos.length; i++){
+						crea();
+						artdeartista[i].innerHTML="<h4>"+horaveintidos[i].dia+"</h4><h3>"+horaveintidos[i].grupo+"</h3><h4>"+horaveintidos[i].hora+"</h4>";
+					}
+				} else if(dia.value=='viernes' && hora.value=='20:00'){
+					borra();
+					for (var i=0; i<vierneshoraocho.length; i++){
+						crea();
+						artdeartista[i].innerHTML="<h4>"+vierneshoraocho[i].dia+"</h4><h3>"+vierneshoraocho[i].grupo+"</h3><h4>"+vierneshoraocho[i].hora+"</h4>";
+					} 
+				} else if(dia.value=='viernes' && hora.value=='22:00'){
+					borra();
+					for (var i=0; i<vierneshoraveintidos.length; i++){
+						crea();
+						artdeartista[i].innerHTML="<h4>"+vierneshoraveintidos[i].dia+"</h4><h3>"+vierneshoraveintidos[i].grupo+"</h3><h4>"+vierneshoraveintidos[i].hora+"</h4>";
+					}
+				} else if(dia.value=='sabado' && hora.value=='20:00'){
+					borra();
+					for (var i=0; i<sabadohoraocho.length; i++){
+						crea();
+						artdeartista[i].innerHTML="<h4>"+sabadohoraocho[i].dia+"</h4><h3>"+sabadohoraocho[i].grupo+"</h3><h4>"+sabadohoraocho[i].hora+"</h4>";
+					} 
+				} else if(dia.value=='sabado' && hora.value=='22:00'){
+					borra();
+					for (var i=0; i<sabadohoraveintidos.length; i++){
+						crea();
+						artdeartista[i].innerHTML="<h4>"+sabadohoraveintidos[i].dia+"</h4><h3>"+sabadohoraveintidos[i].grupo+"</h3><h4>"+sabadohoraveintidos[i].hora+"</h4>";
+					} 
+				} else if(dia.value=='sabado' && hora.value=='todo') {
+					borra();
+					for (var i=0; i<sabado.length; i++){
+						crea();
+						artdeartista[i].innerHTML="<h4>"+sabado[i].dia+"</h4><h3>"+sabado[i].grupo+"</h3><h4>"+sabado[i].hora+"</h4>";
+					}
+				} else {
+					borra();
+					for (var i=0; i<festival.length; i++){
+						crea();
+						artdeartista[i].innerHTML="<h4>"+festival[i].dia+"</h4><h3>"+festival[i].grupo+"</h3><h4>"+festival[i].hora+"</h4>";
+					}
+				}
+			}
+		</script>
+	</body>
+	</html>

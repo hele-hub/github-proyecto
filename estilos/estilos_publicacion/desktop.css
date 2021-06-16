@@ -1,0 +1,114 @@
+@media screen and (min-width: 862px){
+.tit {
+    width: 10vw;
+    margin: 0;
+}
+a.menu {
+    text-decoration: none;
+    color: black;
+    padding: 0;
+    display: block;
+    height: 40px;
+}
+#menu {
+    background-color: transparent;
+}
+#menu > li {
+    float: right;
+    text-align: center;
+    margin: 20px 20px;
+}
+#menu li:hover > .sub{
+    display: block;
+}
+.sub a {
+    padding: 10px 10px;
+}
+.sub a:hover{
+    background-color: black;
+    color: white;
+}
+#menu {
+    overflow: hidden;
+    text-align: center;
+    width: 80vw;
+    margin: 0 auto;
+    height: 100px;
+    position: relative;
+    top: -10px;
+    left: 0;
+}
+#menu li .sub {
+    position: absolute;
+    height: 28vh;
+    top: 55px;
+    width: 25%;
+    margin: 0;
+    text-align: left;
+    display: none;
+}
+#menu li .sub li {
+    width: 100%;
+    background-color: white;
+    margin-bottom: 5px;
+}
+#menu li:hover > .sub{
+    display: block;
+}
+a {
+    padding: 0;
+}
+a.menu:hover{
+    color: #59BCB9;
+}
+ul#menu {
+    border: none;
+    float: right;
+    height: 230px;
+}
+li {
+    background-color: none;
+}
+.fondo_cabecera h1{
+    font-size: 3rem;
+}
+/* ++++++++++ HAMBURGUESA ++++++++++ */
+input#flag {
+    display: none;
+}
+/*++++++++++ MAIN ++++++++++*/
+i#fofa {
+    margin: 0 25px;
+}
+div#archivos {
+    height: 50vh;
+    width: 100px;
+    float: left;
+    margin-top: 25px;
+    text-align: center;
+}
+ul#iconos {
+    width: 100px;
+    height: 40vh;
+}
+p {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 12px;
+}
+div#previsualizacion {
+    margin: 25px 0;
+    height: 50vh;
+    width: 64vw;
+    float: left;
+}
+#inputs {
+    text-align: center;
+}
+/* ++++++++++ FOOTER ++++++++++ */
+a.legal {
+    display: inline;
+    margin: 0 15px;
+}
+}
+}

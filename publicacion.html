@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+	<title>RAD Bombeta 2021 - Haz una publicación</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="helena">
+	<link rel="icon" sizes="512x512" href="img/img_publicacion/favicon_rad.png">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+	<script src="https://use.fontawesome.com/dca1703bd6.js"></script>
+	<link rel="stylesheet" href="https://use.typekit.net/etw5due.css">
+	<link rel="stylesheet" type="text/css" href="estilos/estilos_publicacion/styles.css">
+	<link rel="stylesheet" type="text/css" href="estilos/estilos_publicacion/movil.css">
+	<link rel="stylesheet" type="text/css" href="estilos/estilos_publicacion/tablet.css">
+	<link rel="stylesheet" type="text/css" href="estilos/estilos_publicacion/desktop.css">
+	<style>
+	  @import url("https://use.typekit.net/etw5due.css");
+	</style>
+</head>
+<body>
+	<header>
+        <input type="checkbox" class="checkbox" id="flag"/>
+        <label for="flag" class="menu-toogle"><span></span></label>
+        <ul id="menu">
+            <li><a class="menu" href="homeingles.html">EN</a></li>
+            <li><a class="menu" href="">Área personal</a>
+                <ul class="sub">
+                    <li><a class="menu" href="perfil.html">Perfil</a></li>
+                    <li><a class="menu" href="muro.html">Muro</a></li>
+                    <li><a class="menu" href="publicacion.html">Publicar</a></li>
+                    <li><a class="menu" href="live.html">Live</a></li>
+                </ul>
+            </li>
+            <li><a class="menu" href="informacion-practica.html">Información práctica</a></li>
+            <li><a class="menu" href="entradas.html">Entradas</a></li>   
+            <li><a class="menu" href="programacion.html">Programación</a></li>
+        </ul>
+        <div class="tit">
+            <a href="home.html" id="go_home"><img src="img/img_publicacion/imagotipo_final.png" id="logotipo"></a>
+        </div>
+ 	</header>
+ 	<section id="archivos">
+ 		<div id="iconos">
+			<div class="publi">
+				<li class="publica_algo"><i class="fa fa-plus-square" id="fofa" aria-hidden="true"></i></li>
+				<p>Sube tus fotos</p>
+			</div>
+		</div>
+		 <div id="inputs">
+			<div class="escondeme">
+				<input type="file" multiple accept="image/*" name="archivo" id="archivo">
+			</div>
+		</div>
+
+		
+		
+		<div id="slider">
+			
+		</div>
+		<div id="escribe_y_envia">
+			<input type="text" name="descripción" id="caption" placeholder="Descripción"></input>
+			<input type="submit" id="button" value="PUBLICAR"></input>
+		</div>
+	</section>
+		<script type="text/javascript" language="javascript">
+			document.getElementById('archivo').addEventListener('change', carga);
+			var foto=document.getElementsByClassName('foto')
+			function carga(){
+				var f=(document.getElementById('archivo').files);
+				console.log(f); //nos enseña lo que tenemos cargado en memoria
+				for (var i = 0; i < f.length; i++) {
+					//var nuevo=document.createElement('img'); ESTO ES OTRA MANERA DE HACERLO
+					var nuevo=new Image();
+					nuevo.className='foto';
+					document.getElementById('slider').appendChild(nuevo);
+					nuevo.src=URL.createObjectURL(event.target.files[i]);
+				}
+			}
+		</script>
+		<section id="patrocinadores">
+	    	<img id="img_partners" src="img/img_home/patrocinadores/cocacola.png" alt="lineup">
+	    	<img id="img_partners" src="img/img_home/patrocinadores/jackdaniels.png" alt="lineup">
+	    	<img id="img_partners" src="img/img_home/patrocinadores/mastercard.png" alt="lineup">
+	    	<img id="img_partners" src="img/img_home/patrocinadores/redbull.png" alt="lineup">
+    	</section>
+   	 	<footer>
+	    	<a class="legal" href="avisolegal.html">Aviso Legal</a>
+	    	<a class="legal" href="avisolegal.html">Política de Cookies</a>
+	    	<a class="legal" href="avisolegal.html">Política de Privacidad</a>
+	    	<a class="legal" href="avisolegal.html">Condiciones Generales</a>
+    	</footer>
+	</body>
+	</html>
