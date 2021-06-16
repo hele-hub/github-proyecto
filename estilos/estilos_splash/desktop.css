@@ -1,0 +1,28 @@
+/* ++++++++++ CABECERA ++++++++++ */
+a {
+    padding: 0;
+}
+ul#menu {
+    border: none;
+    float: right;
+    height: 50px;
+    margin: 35px 0;
+}
+li {
+    background-color: none;
+}
+h4 {
+    margin-top: 0;
+    text-align: center;
+    margin: 30px 300px;
+}
+/* ++++++++++ VENUE ++++++++++ */
+#h4venue {
+    text-align: center;
+}
+/* ++++++++++ FOOTER ++++++++++ */
+a.legal {
+    display: inline;
+    margin: 0 15px;
+}
+}

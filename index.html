@@ -1,99 +1,38 @@
 <!DOCTYPE HTML>
 <html lang="es">
 <head>
-<title>RAD Bombeta 2021 - Home</title>
+<title>RAD Bombeta 2021 - Bienvenido a RAD BOMBETA</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="helena">
-<link rel="icon" sizes="512x512" href="img/img_home/favicon_rad.png">
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-<script src="https://use.fontawesome.com/dca1703bd6.js"></script>
+<link rel="icon" sizes="512x512" href="img/img_splash/favicon_rad.png">
 <link rel="stylesheet" href="https://use.typekit.net/etw5due.css">
-<link rel="stylesheet" type="text/css" href="estilos/estilos_home/styles.css">
-<link rel="stylesheet" type="text/css" href="estilos/estilos_home/movil.css">
-<link rel="stylesheet" type="text/css" href="estilos/estilos_home/tablet.css">
-<link rel="stylesheet" type="text/css" href="estilos/estilos_home/desktop.css">
-<script src="http://code.jquery.com/jquery-latest.js"></script>
-<script src="estilos/estilos_home/arriba.js"></script>
-<style>
-  @import url("https://use.typekit.net/etw5due.css");
-</style>
+<link rel="stylesheet" type="text/css" href="estilos/estilos_splash/styles.css">
+<link rel="stylesheet" type="text/css" href="estilos/estilos_splash/movil.css">
+<link rel="stylesheet" type="text/css" href="estilos/estilos_splash/tablet.css">
+<link rel="stylesheet" type="text/css" href="estilos/estilos_splash/desktop.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="estilos/estilos_splash/splash.js"></script>
 </head>
-<body>
-	<span class="ir-arriba arrow-up"><i class="fa fa-arrow-up" aria-hidden="true"></i></span>
-    <header>
-        <input type="checkbox" class="checkbox" id="flag"/>
-        <label for="flag" class="menu-toogle"><span></span></label>
-        <ul id="menu">
-            <li><a class="menu" href="homeingles.html">EN</a></li>
-            <li><a class="menu" href="">Área personal</a>
-                <ul class="sub">
-                    <li><a class="menu" href="perfil.html">Perfil</a></li>
-                    <li><a class="menu" href="muro.html">Muro</a></li>
-                    <li><a class="menu" href="publicacion.html">Publicar</a></li>
-                    <li><a class="menu" href="live.html">Live</a></li>
-                </ul>
-            </li>
-            <li><a class="menu" href="informacion-practica.html">Información práctica</a></li>
-            <li><a class="menu" href="entradas.html">Entradas</a></li>   
-            <li><a class="menu" href="programacion.html">Programación</a></li>
-        </ul>
+<body class="hidden">
+    <div id="preloader">
         <div class="tit">
-            <a href="home.html" id="go_home"><img src="img/img_home/imagotipo_final.png" id="logotipo"></a>
+            <img src="img/img_splash/negativo_vertical.png" id="logotipo_preloader">
         </div>
-    </header>
+    </div>
     <section class="fondo_cabecera">
-    	<div id="info_cabecera">
-    		<h1 id="fechas">Del 4 al 7 de Agosto</h1>
-        	<a href="entradas.html" id="boton_compra">COMPRAR ENTRADAS</a>
+        <div class="tit">
+            <img src="img/img_splash/negativo_vertical.png" id="logotipo">
+        </div>
+        <div id="info_cabecera">
+    		<h3 id="fechas">Del 4 al 7 de Agosto</h3>
+    	</div>
+    	<div id="pprin">
+    		<a href="home.html" id="boton_pprin">VISITA LA PÁGINA PRINCIPAL</a>
+    	</div>
+    	<div id="login">
+    		<a href="login.html" id="boton_login">LOG IN</a>
     	</div>
     </section>
-    <section id="info_festival">
-    	<h2>Ven a descubrir la mejor música indie en el nuevo festival de 2021: RAD Bombeta. El festival tendrá lugar en Elche (Alicante) entre los días 4 y 7 Agosto.
-        </br>¡Te esperamos!</h2>
-    </section>
-    <section id="lineup">
-    	<h3 id="h3formato">CARTEL</h3>
-        <h4 id="h4lineup">Descubre a los mejores artistas indie del panorama nacional del momento.</h4>
-    	<img src="img/img_home/v1.jpg" alt="lineup">
-    	<a href="programacion.html" id="boton_programacion">VER PROGRAMACIÓN</a>
-    </section>
-        <section id="sonido">
-        <h3 id="h3sonido">QUÉ SONARÁ</h3>
-        <h4 id="h4sonido">Estamos felices de anunciar que los mejores artistas del panorama Indie nacional nos acompañarán en la inauguración de este festival. Verás caras conocidas y caras nuevas, pero sobre todo... ¡Sonidos diferentes!</h4>
-        <div class="container">
-            <div class="player">
-                <h5 class="player__title">Reproduciendo ahora</h5>
-                <div class="player__album">
-                    <img src="img/img_home/delaporte.jpg" alt="cover" class="player__img">
-                </div>
-                <div id="info">
-                    <h2 class="player__artist">Clap Clap</h2>
-                    <h3 class="player__song">Delaporte</h3>
-                </div>
-                <audio class="player__audio" controls id="audio">
-                    <source src="img/img_home/delaporte-clap-clap.mp3" type="audio/mpeg"/>
-                    <source src="morning.m4a" type="audio/mpeg"/>
-                </audio>
-            </div>
-        </div>
-    </section>
-    <section id="venue">
-    	<h3 id="h3venue">LUGAR DEL EVENTO</h3>
-    	<h4 id="h4venue">El RAD Bombeta se celebrará en la Institución Ferial Alicantina (en Elche, Alicante). Para los festivaleros que quieran disfrutar de 4 días de buena música de sol a sol existe la posibilidad de acampar en el recinto.</h4>
-    	<a href="informacion-practica.html" id="boton_compra_venue">MÁS INFO</a>
-    </section>
-    <section id="patrocinadores">
-    	<img id="img_partners" src="img/img_home/patrocinadores/cocacola.png" alt="lineup">
-    	<img id="img_partners" src="img/img_home/patrocinadores/jackdaniels.png" alt="lineup">
-    	<img id="img_partners" src="img/img_home/patrocinadores/mastercard.png" alt="lineup">
-    	<img id="img_partners" src="img/img_home/patrocinadores/redbull.png" alt="lineup">
-    </section>
-    <footer>
-    	<a class="legal" href="avisolegal.html">Aviso Legal</a>
-    	<a class="legal" href="avisolegal.html">Política de Cookies</a>
-    	<a class="legal" href="avisolegal.html">Política de Privacidad</a>
-    	<a class="legal" href="avisolegal.html">Condiciones Generales</a>
-    </footer>
 </body>
 </html>
