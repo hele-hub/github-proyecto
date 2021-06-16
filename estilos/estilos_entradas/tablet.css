@@ -1,0 +1,23 @@
+@media screen and (min-width: 481px) and (max-width: 861px){
+li#atras {
+    width: 5vw;
+    float: left;
+    margin: 0 50px;
+    font-size: 28px;
+}
+li#adelante {
+    width: 5vw;
+    float: right;
+    margin: 0 50px;
+    font-size: 28px;
+}
+div#tipo_a {
+    height: 450px;
+}
+div#tipo_b {
+    height: 450px;
+}
+div#tipo_c {
+    height: 450px;
+}
+}
