@@ -1,14 +1,16 @@
 @media screen and (min-width: 862px){
-.tit {
+/*.tit {
     width: 10vw;
     margin: 0;
+}*/
+.tit {
+    width: 30px;
+    float: left;
 }
 a.menu {
     text-decoration: none;
     color: black;
     padding: 0;
-    display: block;
-    height: 40px;
 }
 #menu {
     background-color: transparent;
@@ -16,7 +18,7 @@ a.menu {
 #menu > li {
     float: right;
     text-align: center;
-    margin: 20px 20px;
+    margin: 17px 20px;
 }
 #menu li:hover > .sub{
 	display: block;
@@ -25,6 +27,13 @@ ul#menu {
     border: none;
     float: right;
     height: 280px;
+}
+a.menu {
+    display: block;
+    text-decoration: none;
+    height: 40px;
+    padding: 0px 0px;
+    color: black;
 }
 .sub a {
     padding: 10px 10px;
@@ -58,46 +67,28 @@ ul#menu {
     margin-bottom: 5px;
 }
 #menu li:hover > .sub{
-    display: block;
+	display: block;
 }
+/* ++++++++++ HAMBURGUESA ++++++++++ */
+input#flag {
+    display: none;
+}
+/* ++++++++++ HASTA AQUI EL MENU HAMBURGUESA ++++++++++ */
 a {
     padding: 0;
 }
 a.menu:hover{
     color: #59BCB9;
 }
-ul#menu {
-    border: none;
-    float: right;
-    height: 230px;
-}
 li {
     background-color: none;
 }
-/*++++++ HAMBURGUESA ++++++++++*/
-input#flag {
-    display: none;
-}
-/*++++++ CUERPO ++++++++++*/
-h1{
-    font-size: 4em;
-}
-h3 {
-    font-family: 'IBM Plex Sans';
-    color: white;
-    font-weight: 300;
-    text-align: center;
-    font-size: 22px;
-    margin: 20px auto;
-}
-iframe{
-    width: 100%;
-    height: 600px;
+h1 {
+    font-size: 3em;
 }
 /* ++++++++++ FOOTER ++++++++++ */
 a.legal {
     display: inline;
     margin: 0 15px;
-}
 }
 }
