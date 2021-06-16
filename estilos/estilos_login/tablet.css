@@ -1,0 +1,27 @@
+@media screen and (min-width: 481px) and (max-width: 861px){
+.fondo_cabecera {
+    background-image: url("../../img/img_login/fondo_rad.jpg");
+    background-repeat: repeat;
+}
+div#login_girado {
+    display: none;
+}
+h1 {
+    font-size: 2.8rem;
+}
+.form {
+    height: 70%;
+    width: 100vw;
+    text-align: center;
+}
+input[type="text"] {
+    width: 300px;
+}
+#login {
+    margin: 50px auto;
+    width: 300px;
+}
+a{
+	padding: 0;
+}
+}
