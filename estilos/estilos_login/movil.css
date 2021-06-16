@@ -3,7 +3,7 @@
     background-image: url("../../img/img_login/fondo_rad.jpg");
     background-repeat: repeat;
     height: 100vh;
-    padding: 50px 0;
+    padding: 120px 0;
 }
 div#login_girado {
     display: none;
