@@ -1,0 +1,166 @@
+@media screen and (min-width: 862px){
+.tit {
+    width: 10vw;
+    margin: 0;
+}
+a.menu {
+    text-decoration: none;
+    color: black;
+    padding: 0;
+    display: block;
+    height: 40px;
+}
+#menu {
+    background-color: transparent;
+}
+#menu > li {
+    float: right;
+    text-align: center;
+    margin: 20px 20px;
+}
+#menu li:hover > .sub{
+    display: block;
+}
+.sub a {
+    padding: 10px 10px;
+}
+.sub a:hover{
+    background-color: black;
+    color: white;
+}
+#menu {
+    overflow: hidden;
+    text-align: center;
+    width: 80vw;
+    margin: 0 auto;
+    height: 100px;
+    position: relative;
+    top: -10px;
+    left: 0;
+}
+#menu li .sub {
+    position: absolute;
+    height: 28vh;
+    top: 55px;
+    width: 25%;
+    margin: 0;
+    text-align: left;
+    display: none;
+}
+#menu li .sub li {
+    width: 100%;
+    background-color: white;
+    margin-bottom: 5px;
+}
+#menu li:hover > .sub{
+    display: block;
+}
+a {
+    padding: 0;
+}
+a.menu:hover{
+    color: #59BCB9;
+}
+ul#menu {
+    border: none;
+    float: right;
+    height: 230px;
+}
+li {
+    background-color: none;
+}
+/* ++++++++++ HAMBURGUESA ++++++++++ */
+input#flag {
+    display: none;
+}
+
+div#username {
+    height: 10vh;
+    width: 40vw;
+    float: left;
+    margin: 0px 0px 0px 15%;
+    position: relative;
+    top: -70px;
+}
+p#nombre_usuario {
+    color: black;
+    padding: 0;
+    font-size: 48px;
+    margin: 0;
+}
+div#tarjeta_info {
+    width: 35vw;
+    background-color: transparent;
+}
+div#asistencia {
+    width: 20vw;
+    float: left;
+}
+p#info_asistencia {
+    font-size: 22px;
+    padding-bottom: 20px;
+}
+div#marcador_fecha_hora {
+    width: 80px;
+    background-color: black;
+    float: right;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    padding: 5px;
+    height: 75px;
+}
+section#img_perfil_usuario {
+    background-image: none;
+}
+#img_perfil_usuario {
+    height: 100vh;
+}
+div#foto_perfil {
+    display: block;
+    float: right;
+    width: 30vw;
+    height: 30vh;
+    position: relative;
+    top: -180px;
+    margin: 0px 15% 0px 0px;
+}
+#tu {
+    width: 100%;
+    /*border-radius: 15px;*/
+}
+div#tarjeta_info {
+    height: 59vh;
+    padding: 0;
+    margin: 0px 0px 0px 15%;
+}
+#fondo_escritorio {
+    background-image: url("../../img/img_perfil/fondo_rad.jpg");
+    height: 300px;
+    display: block;
+}
+#addimage{
+    display: none;
+}
+div#publica {
+    display: block;
+    width: 30vw;
+    float: right;
+    text-align: center;
+    padding: 15px;
+}
+a.publi {
+    border: 2px solid black;
+    margin: 0;
+    border-radius: 50px;
+    text-decoration: none;
+    color: black;
+    padding: 7px 0;
+}
+/* ++++++++++ FOOTER ++++++++++ */
+a.legal {
+    display: inline;
+    margin: 0 15px;
+}
+}
+}

@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'bdr-mono', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+li{
+    list-style-type: none;
+}
+a{
+    display: block;
+    text-decoration: none;
+    height: 40px;
+    padding-top: 10px;
+    padding-left: 15px;
+    color: black;
+}
+header{
+    background-color: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    padding: 15px;
+}
+img#logotipo {
+    width: 100px;
+    padding: 0;
+}
+a#go_home {
+    padding: 0;
+}
+/* ++++++++++ CABECERA ++++++++++ */
+header h1{
+    width: 25%;
+    float: left;
+    color: #282828;
+    font-family: bdr-mono;
+    font-weight: 800;
+}
+h2 {
+    font-family: 'bdr-mono';
+    color: #282828;
+    float: left;
+    width: 100%;
+    line-height: 0.5;
+}
+/* ++++++++++ IMG PERFIL ++++++++++ */
+.evento {
+    height: 10vh;
+    margin-bottom: 20px;
+}
+div#username {
+    height: 40vh;
+}
+p#nombre_usuario {
+    font-size: 30px;
+    padding-top: 33vh;
+    margin: 0 20px;
+    font-weight: 600;
+    color: white;
+    font-family: 'IBM Plex Sans';
+}
+#img_perfil_usuario {
+    background-image: url("../../img/img_perfil/foto_perfil.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+div#foto_perfil {
+    display: none;
+}
+div#tarjeta_info {
+    height: 53.5vh;
+    color: black;
+    background-color: white;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    opacity: 0.9;
+    padding: 20px;
+}
+p#info_asistencia {
+    margin-bottom: 20px;
+    border-bottom: 2px solid;
+}
+div#asistencia {
+    width: 50vw;
+    float: left;
+}
+div#marcador_fecha_hora {
+    width: 80px;
+    background-color: black;
+    float: right;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+    height: 75px;
+}
+p#dia {
+    font-weight: 600;
+    font-size: 14px;
+}
+p#numero {
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 0.9;
+}
+p#banda {
+    font-weight: 600;
+    font-size: 26px;
+}
+p#hora {
+    font-size: 16px;
+    color: darkgray;
+    line-height: 28px;
+}
+section#addimage {
+    background-color: #59bcb9;
+}
+#fofa {
+    font-size: 30px;
+    color: white;
+    width: 100%;
+}
+#addimage a{
+    padding: 10px 0;
+    height: 50px;
+    text-align: center;
+}
+/* ++++++++++ PATROCINADORES ++++++++++ */
+section#patrocinadores {
+    background-color: #282828;
+    text-align: center;
+}
+img#img_partners {
+    height: 100px;
+    width: auto;
+    margin: 15px;
+}
+img{
+    width: 100%;
+    padding: 15px;
+}
+/* ++++++++++ FOOTER ++++++++++ */
+footer {
+    text-align: center;
+    padding: 30px 0;
+    background-color: #101010;
+}
+a.legal{
+    color: #ffffff70;
+}

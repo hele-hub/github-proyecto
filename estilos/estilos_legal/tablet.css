@@ -1,0 +1,17 @@
+@media screen and (min-width: 768px) and (max-width: 861px){
+/* ++++++++++ CABECERA ++++++++++ */
+.fondo_cabecera {
+    height: calc(500px - 100px);
+}
+#menu {
+    width: 100%;
+}
+h3 {
+    position: relative;
+    top: 220px;
+    text-align: center;
+    font-family: 'source-sans-pro';
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+}

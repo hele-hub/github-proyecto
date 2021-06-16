@@ -1,0 +1,108 @@
+@media screen and (min-width: 862px){ /*lo he cambiado para que se adapte a la pantalla de mi móvil; antes 769px*/
+/* ++++++++++ HEADER ++++++++++ */
+.tit {
+    width: 10vw;
+    margin: 0;
+}
+a.menu {
+    text-decoration: none;
+    color: black;
+    padding: 0;
+}
+#menu {
+    background-color: transparent;
+}
+#menu > li {
+    float: right;
+    text-align: center;
+    margin: 0;
+}
+#menu li:hover > .sub{ /*cuando pase el raton por el menu principal, aparecerá el submenú*/
+	display: block;
+}
+ul#menu {
+    border: none;
+    float: right;
+    height: 230px;
+}
+a.menu {
+    display: block;
+    text-decoration: none;
+    height: 40px;
+    padding: 0px 0px;
+    color: black;
+}
+.sub a {
+    padding: 10px 10px;
+}
+.sub a:hover{
+  	background-color: black;
+  	color: white;
+}
+#menu {
+    overflow: hidden;
+    text-align: center;
+    width: 80vw;
+    margin: 0 auto;
+    height: 100px;
+    position: relative;
+    top: -10px;
+    left: 0;
+}
+#menu > li {
+    text-align: center;
+    margin: 20px 20px;
+}
+#menu li .sub {
+    position: absolute;
+    height: 28vh;
+    top: 55px;
+    width: 25%;
+    margin: 0;
+    text-align: left;
+    display: none;
+}
+#menu li .sub li {
+    width: 100%;
+    background-color: white;
+    margin-bottom: 5px;
+}
+#menu li:hover > .sub{ /*cuando pase el raton por el menu principal, aparecerá el submenú*/
+	display: block;
+}
+/* ++++++++++ HAMBURGUESA ++++++++++ quizas todo esto no haria falta porque tenemos el max width en las queries de la tablet*/
+input#flag {
+    display: none;
+}
+/* ++++++++++ CABECERA ++++++++++ */
+.fondo_cabecera {
+    background-color: #101010;
+}
+a {
+    padding: 0;
+}
+a.menu:hover{
+	color: #59BCB9;
+}
+li {
+    background-color: none;
+}
+h4 {
+    margin-top: 0;
+    text-align: center;
+    margin: 30px 300px;
+}
+/* ++++++++++ VENUE ++++++++++ */
+#h4venue {
+    text-align: center;
+}
+p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+/* ++++++++++ FOOTER ++++++++++ */
+a.legal {
+    display: inline;
+    margin: 0 15px;
+}
+}

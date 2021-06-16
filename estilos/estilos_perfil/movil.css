@@ -1,0 +1,116 @@
+@media screen and (max-width: 861px){
+/* ++++++++++ HAMBURGUESA ++++++++++ */
+.check{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    opacity: 0;
+}
+.check:checked ~ #menu{
+    left: 0;
+    transition: 1s;
+}
+#menu {
+    position: absolute;
+    top: 70px;
+    left: -100%;
+    width: 100%;
+    transition: 1s;
+    background-color: white;
+}
+ul#menu {
+    border: 3px solid black;
+}
+ul.sub {
+    margin-left: 30px;
+}
+#flag{
+    display: none;
+}
+.menu-toogle {
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background: none;
+    right: 15px;
+    top: 15px;
+    border: none;
+}
+.menu-toogle span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 30px;
+    height: 3px;
+    margin: auto;
+    background: #282828;
+}
+.menu-toogle span:before,
+.menu-toogle span:after{
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    content: '';
+    background: #282828;
+    left: 0;
+}
+.menu-toogle span:before{
+    top: -0.6em;
+}
+.menu-toogle span:after{
+    bottom: -0.6em;
+}
+/*++++++++++ ANIMATION HAMBURGUESA +++++++++*/
+#flag:checked + .menu-toogle span{
+    background: none;
+}
+.menu-toogle span{
+    transition: background 0s .25s;
+}
+.menu-toogle span:before{
+    -webkit-transition-property: top, transform;
+    transition-property: top, transform;
+}
+.menu-toogle span:after{
+    -webkit-transition-property: bottom, transform;
+    transition-property: bottom, transform;
+}
+#flag:checked + .menu-toogle span:before{
+    top: 0; 
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+#flag:checked + .menu-toogle span:after{
+    bottom: 0; 
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+#flag:checked + .menu-toogle span:before,
+#flag:checked + .menu-toogle span:after{
+    -webkit-transition-delay: 0s, .25s;
+    transition-delay: 0s, .25s;
+}
+.menu-toogle span:before,
+.menu-toogle span:after{
+    -webkit-transition-delay: .25s, 0s;
+    -webkit-transition-duration: .25s, .25s;
+    transition-delay: .25s, 0s;
+    transition-duration: .25s, .25s;
+}
+/*+++++++++++++++ NAV ++++++++++++++++++*/
+#flag:checked ~ #menu{
+    left: 0px;
+}
+li{
+	background-color: white;
+}
+}

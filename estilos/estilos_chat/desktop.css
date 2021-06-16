@@ -1,0 +1,82 @@
+@media screen and (min-width: 862px){ /*lo he cambiado para que se adapte a la pantalla de mi móvil; antes 769px*/
+.tit {
+    width: 10vw;
+    margin: 0;
+}
+a.menu {
+    text-decoration: none;
+    color: black;
+    padding: 0;
+    display: block;
+    height: 40px;
+    text-align: left;
+}
+#menu {
+    background-color: transparent;
+}
+#menu > li {
+    float: right;
+    text-align: center;
+    margin: 20px 20px;
+}
+#menu li:hover > .sub{
+    display: block;
+}
+.sub a {
+    padding: 10px 10px;
+}
+.sub a:hover{
+    background-color: black;
+    color: white;
+}
+#menu {
+    overflow: hidden;
+    text-align: center;
+    width: 80vw;
+    margin: 0 auto;
+    height: 100px;
+    position: relative;
+    top: -10px;
+    left: 0;
+}
+#menu li .sub {
+    position: absolute;
+    height: 28vh;
+    top: 55px;
+    width: 25%;
+    margin: 0;
+    text-align: left;
+    display: none;
+}
+#menu li .sub li {
+    width: 100%;
+    background-color: white;
+    margin-bottom: 5px;
+}
+#menu li:hover > .sub{
+    display: block;
+}
+a {
+    padding: 0;
+}
+a.menu:hover{
+    color: #59BCB9;
+}
+ul#menu {
+    border: none;
+    float: right;
+    height: 230px;
+}
+li {
+    background-color: none;
+}
+/* ++++++++++ HAMBURGUESA ++++++++++ */
+input#flag {
+    display: none;
+}
+/* ++++++++++ FOOTER ++++++++++ */
+a.legal {
+    display: inline;
+    margin: 0 15px;
+}
+}
