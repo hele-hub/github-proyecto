@@ -1,0 +1,16 @@
+@media screen and (min-width: 481px) and (max-width: 861px){
+/* ++++++++++ CABECERA ++++++++++ */
+#menu {
+    width: 100%;
+}
+/*h4 {
+    margin: 0px 100px;
+    text-align: center;
+}
+#h4venue {
+    text-align: center;
+}*/
+section#info_festival {
+    padding: 50px;
+}
+}

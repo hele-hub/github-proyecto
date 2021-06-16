@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+<title>RAD Bombeta 2021 - Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="helena">
+<link rel="icon" sizes="512x512" href="img/img_home/favicon_rad.png">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<script src="https://use.fontawesome.com/dca1703bd6.js"></script>
+<link rel="stylesheet" href="https://use.typekit.net/etw5due.css">
+<link rel="stylesheet" type="text/css" href="estilos/estilos_home/styles.css">
+<link rel="stylesheet" type="text/css" href="estilos/estilos_home/movil.css">
+<link rel="stylesheet" type="text/css" href="estilos/estilos_home/tablet.css">
+<link rel="stylesheet" type="text/css" href="estilos/estilos_home/desktop.css">
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="estilos/estilos_home/arriba.js"></script>
+<style>
+  @import url("https://use.typekit.net/etw5due.css");
+</style>
+</head>
+<body>
+	<span class="ir-arriba arrow-up"><i class="fa fa-arrow-up" aria-hidden="true"></i></span>
+    <header>
+        <input type="checkbox" class="checkbox" id="flag"/>
+        <label for="flag" class="menu-toogle"><span></span></label>
+        <ul id="menu">
+            <li><a class="menu" href="homeingles.html">ES</a></li>
+            <li><a class="menu" href="">User area</a>
+                <ul class="sub">
+                    <li><a class="menu" href="perfil.html">Profile</a></li>
+                    <li><a class="menu" href="muro.html">Wall</a></li>
+                    <li><a class="menu" href="publicacion.html">Post</a></li>
+                    <li><a class="menu" href="live.html">Live</a></li>
+                    <li><a class="menu" href="chat.html">Chat</a></li>
+                </ul>
+            </li>
+            <li><a class="menu" href="informacion-practica.html">Information</a></li>
+            <li><a class="menu" href="entradas.html">Tickets</a></li>   
+            <li><a class="menu" href="programacion.html">Lineup</a></li>
+        </ul>
+        <div class="tit">
+            <a href="home.html" id="go_home"><img src="img/img_home/imagotipo_final.png" id="logotipo"></a>
+        </div>
+    </header>
+    <section class="fondo_cabecera">
+    	<div id="info_cabecera">
+    		<h1 id="fechas">August 4-7</h1>
+        	<a href="entradas.html" id="boton_compra">BUY TICKETS</a>
+    	</div>
+    </section>
+    <section id="info_festival">
+    	<h2>On 2021, come discover the best indie music on the new festival: RAD BOMBETA. The festival will take place in Elche (Alicante) from August 4th-8th.
+        </br>See you there!</h2>
+    </section>
+    <section id="lineup">
+    	<h3 id="h3formato">LINEUP</h3>
+        <h4 id="h4lineup">Discover the current best national indie artists</h4>
+    	<img src="img/img_home/v1.jpg" alt="lineup">
+    	<a href="programacion.html" id="boton_programacion">SEE TIMETABLES</a>
+    </section>
+        <section id="sonido">
+        <h3 id="h3sonido">RAD BOMBETA SOUND</h3>
+        <h4 id="h4sonido">We are happy to announce that the best national indie artists will be opening this festival. You'll get to see many known faces, maybe some unknown ones but mostly... You'll get to listen the current best indie music!</h4>
+        <div class="container">
+            <div class="player">
+                <h5 class="player__title">Now playing</h5>
+                <div class="player__album">
+                    <img src="img/img_home/delaporte.jpg" alt="cover" class="player__img">
+                </div>
+                <div id="info">
+                    <h2 class="player__artist">Clap Clap</h2>
+                    <h3 class="player__song">Delaporte</h3>
+                </div>
+                <audio class="player__audio" controls id="audio">
+                    <source src="img/img_home/delaporte-clap-clap.mp3" type="audio/mpeg"/>
+                    <source src="morning.m4a" type="audio/mpeg"/>
+                </audio>
+            </div>
+        </div>
+    </section>
+    <section id="venue">
+    	<h3 id="h3venue">VENUE</h3>
+    	<h4 id="h4venue">RAD Bombeta will be held in the Institución Ferial Alicantina (Elche, Alicante). For the visitors who want to enjoy 4 whole days of great music there's the possibility to camp on the venue.</h4>
+    	<a href="informacion-practica.html" id="boton_compra_venue">MORE INFO</a>
+    </section>
+    <section id="patrocinadores">
+    	<img id="img_partners" src="img/img_home/patrocinadores/cocacola.png" alt="lineup">
+    	<img id="img_partners" src="img/img_home/patrocinadores/jackdaniels.png" alt="lineup">
+    	<img id="img_partners" src="img/img_home/patrocinadores/mastercard.png" alt="lineup">
+    	<img id="img_partners" src="img/img_home/patrocinadores/redbull.png" alt="lineup">
+    </section>
+    <footer>
+    	<a class="legal" href="avisolegal.html">Legal notice</a>
+    	<a class="legal" href="avisolegal.html">Cookies policy</a>
+    	<a class="legal" href="avisolegal.html">Privacy policy</a>
+    	<a class="legal" href="avisolegal.html">Terms and conditions</a>
+    </footer>
+</body>
+</html>
