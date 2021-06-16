@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	font-family: 'bdr-mono', sans-serif;
+	font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+div, li{
+    /*padding: 0px;*/
+}
+body{
+    color: #FFF;
+    background-color: white;
+}
+li {
+    list-style-type: none;
+    color: black;
+}
+a{
+    display: block;
+    text-decoration: none;
+    height: 40px;
+    padding-top: 10px;
+    padding-left: 15px;
+    color: black;
+}
+header {
+    background-color: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 70px;
+    padding: 15px;
+}
+img#logotipo {
+    width: 100px;
+    padding: 0;
+}
+a#go_home {
+    padding: 0;
+}
+i.fa.fa-arrow-up {
+    color: #282828;
+    padding: 15px;
+    background-color: #59BCB9;
+    border-radius: 100px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+}
+/* ++++++++++ CABECERA ++++++++++ */
+#titulo{
+    background-image: url("../../img/img_informacion-practica/cabecera.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 330px;
+}
+div#titulo {
+    text-align: center;
+    padding: 0 15px;
+}
+div#intro {
+    transform: translateY(40%);
+    height: 100%;
+}
+h1 {
+    font-size: 2em;
+    font-family: 'bdr-mono';
+    font-weight: 800;
+    color: white;
+}
+h2 {
+    font-family: bdr-mono;
+    color: black;
+    text-align: center;
+    font-weight: 800;
+    margin: 50px 0 auto;
+}
+.descripcion {
+    color: black;
+    font-weight: 400;
+    margin: 15px 15px 30px 15px;
+    text-align: center;
+}
+h3 {
+    font-family: 'IBM Plex Sans';
+    color: white;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 15px;
+}
+div#tarjetas_info {
+    width: 100%;
+    margin: 0 auto 50px;
+    padding: 0 15px;
+}
+.tipo_a {
+    background-color: #59BCB9;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+h4 {
+    font-family: 'bdr-mono';
+    font-weight: 800;
+    color: black;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 50px;
+    transform: translateY(100%);
+}
+p {
+    font-family: 'IBM Plex Sans';
+    font-weight: 400;
+    color: black;
+}
+section#servicios_instalaciones {
+    background-color: #282828;
+    padding: 100px 0px;
+}
+h2#tit_servicios_instalaciones {
+    color: white;
+    margin: 0 15px;
+}
+p#txt_servicios_instalaciones {
+    color: white;
+    font-weight: 200;
+}
+img.iconitos {
+    width: 50px;
+}
+#iconos {
+    text-align: center;
+    width: 95%;
+    margin: 15px;
+}
+.org_iconos {
+    display: inline-block;
+    width: 45%;
+    margin: 15px 0;
+}
+p.txt_icono {
+    color: white;
+    font-size: 14px;
+}
+div#sitios {
+    width: 100%;
+    height: auto;
+    padding: 0 5vh;
+    text-align: center;
+}
+/*h2#tit_que_ver {
+    margin: 50px auto 30px auto;
+}*/
+.lugar {
+    width: 100%;
+    margin: 10px auto;
+}
+p.txt_lugar {
+    font-size: 28px;
+    font-weight: 500;
+    margin: 30px 0;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+img:hover {
+    opacity: 0.5;
+}
+/* ++++++++++ PATROCINADORES ++++++++++ */
+section#patrocinadores {
+    background-color: #282828;
+    text-align: center;
+}
+img#img_partners {
+    height: 100px;
+    width: auto;
+    margin: 15px;
+    padding: 15px;
+}
+/* ++++++++++ FOOTER ++++++++++ */
+footer {
+    text-align: center;
+    padding: 30px 0;
+    background-color: #101010;
+}
+a.legal{
+    color: #ffffff70;
+}

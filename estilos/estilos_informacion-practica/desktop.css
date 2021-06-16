@@ -1,0 +1,142 @@
+@media screen and (min-width: 862px){
+.tit {
+    width: 10vw;
+    margin: 0;
+}
+a.menu {
+    text-decoration: none;
+    color: black;
+    padding: 0;
+    display: block;
+    height: 40px;
+}
+a.menu:hover{
+    color: #59BCB9;
+}
+#menu {
+    background-color: transparent;
+}
+#menu > li {
+    float: right;
+    text-align: center;
+    margin: 20px 20px;
+}
+#menu li:hover > .sub{
+	display: block;
+}
+ul#menu {
+    border: none;
+    float: right;
+    height: 280px;
+}
+.sub a {
+    padding: 10px 10px;
+}
+.sub a:hover{
+  	background-color: black;
+  	color: white;
+}
+#menu {
+    overflow: hidden;
+    text-align: center;
+    width: 80vw;
+    margin: 0 auto;
+    height: 100px;
+    position: relative;
+    top: -10px;
+    left: 0;
+}
+#menu li .sub {
+    position: absolute;
+    height: 28vh;
+    top: 55px;
+    width: 25%;
+    margin: 0;
+    text-align: left;
+    display: none;
+}
+#menu li .sub li {
+    width: 100%;
+    background-color: white;
+    margin-bottom: 5px;
+}
+#menu li:hover > .sub{ /*cuando pase el raton por el menu principal, aparecerá el submenú*/
+	display: block;
+}
+/* ++++++++++ HAMBURGUESA ++++++++++ quizas todo esto no haria falta porque tenemos el max width en las queries de la tablet*/
+input#flag {
+    display: none;
+}
+/* ++++++++++ CUERPO ++++++++++ */
+h1 {
+    font-size: 3em;
+}
+h3 {
+    font-size: 22px;
+}
+.descripcion {
+    color: black;
+    font-weight: 400;
+    margin: 30px auto;
+    text-align: center;
+    width: 600px;
+}
+.info {
+    height: 320px;
+}
+#tarjetas_info {
+    width: 100%;
+    margin: 10px 0;
+    padding: 0;
+    text-align: center;
+}
+div#sitios {
+    display: flex;
+}
+.tipo_a {
+    height: 300px;
+    width: 400px;
+    display: inline-flex;
+}
+.info {
+    height: 200px;
+}
+.tipo_a {
+    background-color: #59BCB9;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    padding: 20px;
+    display: inline-flex;
+}
+p {
+    font-family: 'IBM Plex Sans';
+    font-weight: 200;
+    text-align: center;
+}
+.org_iconos {
+    width: 15vw;
+}
+#iconos {
+    text-align: center;
+    width: 800px;
+    margin: 50px auto 0;
+}
+div#sitios {
+    display: inline-flex;
+}
+section#que_ver {
+    padding: 50px 0 100px;
+}
+h2#tit_que_ver {
+    margin: 0;
+}
+.lugar {
+    width: 30%;
+    margin: 10px;
+    height: 40vh;
+}
+a.legal {
+    display: inline;
+}
+}

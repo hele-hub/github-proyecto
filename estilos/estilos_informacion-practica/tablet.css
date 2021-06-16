@@ -1,0 +1,20 @@
+@media screen and (min-width: 481px) and (max-width: 861px){
+.tipo_a {
+    height: 250px;
+}
+.info p{
+    margin: 0 30px;
+}
+.descripcion {
+    margin: 30px 100px;
+}
+.lugar img {
+    padding: 15px;
+}
+p#txt_servicios_instalaciones {
+    margin: 15px 100px 30px 100px;
+}
+.org_iconos {
+    width: 33%;
+}
+}
